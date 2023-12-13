@@ -42,8 +42,10 @@ Criação de Outras 5 máquinas dentro da Rede Interna B (4 pcs e 2 servidores) 
 
 O objetivo final, é que um dos Desktops da Rede A, consiga colocar em seu navegador interno, o endereço do Site do Servidor WEB que está na REDE B, e a página possa ser carregada corretamente, validando deste modo o Roteamento entre as Redes, DNS e a camada da Aplicação funcionando corretamente.
 
-![Solucao](/files/Projeto_Redes_solucao.png)
+# Solução:
+---------
 
+![Solucao](/files/Projeto_Redes_solucao.png)
 
 ## Configuração das Redes
 
@@ -61,11 +63,13 @@ Rede A:
     - 192.168.10.254 (Gateway)
     - 192.168.10.253 (DNS)
 
-![Servidor DHCP](/files/server_DHCP1.png)
+![Servico DHCP](/files/server_DHCP1.png)
 
 - Para cada uma das PCs, configure o IP usando o protocolo DHCP. Dessa forma o servidor distribuira os IP's para cada computador.
 
 ![PCs IP](/files/pc1.png)
+
+
 
 Rede B:
 -------
@@ -75,20 +79,36 @@ Rede B:
     - 172.15.0.254 (Gateway) 
     - 172.15.0.253 (DNS)
 
-![Servidor DHCP](/files/server_DHCP(1).png)
+![Servidor DHCP(1)](/files/server_DHCP(1).png)
 
 - Configure  e ative o serviço DHCP:
     - 172.15.0.254 (Gateway) 
     - 172.15.0.253 (DNS)
 
-![Servidor DHCP](/files/server_DHCP(1)1.png)
+![Servico DHCP(1)](/files/server_DHCP(1)1.png)
 
 - Para cada uma das PCs, configure o IP usando o protocolo DHCP. Dessa forma o servidor distribuira os IP's para cada computador.
 
 ![PCs IP](/files/pc3(1).png)
 
+- Servidor web:
+    - Desligue o servidor e troque a placa de rede por uma PT-HOST-NM-1CGE, ligue o servidor novamente.
+
+![Servidor web](/files/server_web2ada.png)
+
+    - Configure os IPs do servidor:
+        - 172.15.0.254 (Gateway) 
+        - 172.15.0.253 (DNS)
+        
+![Servidor web](/files/server_web2ada1.png)
+        
+    - Ative os serviços http
+    
+![Servidor web](/files/server_web2ada2.png)
+
 ## Configuração do Roteamento
 
+- Ligue o roteador 
 Para que as redes possam se comunicar, é necessário configurar o roteamento entre elas. Para isso, podemos usar o protocolo de roteamento RIP.
 
 No roteador 1841, configure as seguintes rotas:

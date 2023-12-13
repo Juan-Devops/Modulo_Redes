@@ -47,6 +47,8 @@ O objetivo final, é que um dos Desktops da Rede A, consiga colocar em seu naveg
 
 xxxx
 
+![My Image](../files/server DHCP.png)
+
 ## Configuração do Roteamento
 
 Para que as redes possam se comunicar, é necessário configurar o roteamento entre elas. Para isso, podemos usar o protocolo de roteamento RIP.

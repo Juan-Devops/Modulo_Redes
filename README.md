@@ -47,7 +47,7 @@ O objetivo final, é que um dos Desktops da Rede A, consiga colocar em seu naveg
 
 xxxx
 
-![My Image](../files/server DHCP.png)
+![My Image](../files/pc1.png)
 
 ## Configuração do Roteamento
 

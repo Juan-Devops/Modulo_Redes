@@ -42,12 +42,50 @@ Criação de Outras 5 máquinas dentro da Rede Interna B (4 pcs e 2 servidores) 
 
 O objetivo final, é que um dos Desktops da Rede A, consiga colocar em seu navegador interno, o endereço do Site do Servidor WEB que está na REDE B, e a página possa ser carregada corretamente, validando deste modo o Roteamento entre as Redes, DNS e a camada da Aplicação funcionando corretamente.
 
+![Solucao](/files/Projeto_Redes_solucao.png)
+
 
 ## Configuração das Redes
 
-xxxx
+Rede A:
+-------
+- Monte a rede com 4 PCs, um servidor e um switch na configuração estrela (switch na posição central).
+- Conecte os dispositivos. 
+- Configure o servidor DHCP com o IP estático:
+    - 192.168.10.254 (Gateway)
+    - 192.168.10.253 (DNS)
 
-![My Image](../files/pc1.png)
+![Servidor DHCP](/files/server_DHCP.png)
+
+- Configure  e ative o serviço DHCP:
+    - 192.168.10.254 (Gateway)
+    - 192.168.10.253 (DNS)
+
+![Servidor DHCP](/files/server_DHCP1.png)
+
+- Para cada uma das PCs, configure o IP usando o protocolo DHCP. Dessa forma o servidor distribuira os IP's para cada computador.
+
+![PCs IP](/files/pc1.png)
+
+Rede B:
+-------
+- Monte a rede com 4 PCs, um servidor e um switch na configuração estrela (switch na posição central).
+- Conecte os dispositivos.
+- Configure o servidor DHCP com o IP estático:
+    - 172.15.0.254 (Gateway) 
+    - 172.15.0.253 (DNS)
+
+![Servidor DHCP](/files/server_DHCP(1).png)
+
+- Configure  e ative o serviço DHCP:
+    - 172.15.0.254 (Gateway) 
+    - 172.15.0.253 (DNS)
+
+![Servidor DHCP](/files/server_DHCP(1)1.png)
+
+- Para cada uma das PCs, configure o IP usando o protocolo DHCP. Dessa forma o servidor distribuira os IP's para cada computador.
+
+![PCs IP](/files/pc3(1).png)
 
 ## Configuração do Roteamento
 

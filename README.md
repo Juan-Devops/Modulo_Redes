@@ -5,7 +5,7 @@
 
 - hiago.deleon@gmail.com
 - Juan Soto Sotelo
-- layseraraujo@gmail.com
+- Layse Roberta da Silva Araújo
 - leonardovsestudos@gmail.com
 - renataassis.17@gmail.com
 

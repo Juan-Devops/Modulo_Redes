@@ -47,6 +47,7 @@ O objetivo final, é que um dos Desktops da Rede A, consiga colocar em seu naveg
 
 ![Solucao](/files/Projeto_Redes_solucao.png)
 
+
 ## Configuração das Redes
 
 Rede A:
@@ -129,37 +130,25 @@ Finalmente, nos servidores DHCP das redes A e B incluia os dns do servidor web d
 ![DNSweb2](/files/server_DHCP(1)2.png)
   
 
-## Teste de Comunicação e DNS
+## Testes
 
-Para testar a comunicação entre as redes e verificar o funcionamento do DNS, siga os passos abaixo:
+### Comunicação
+---------------
 
-1. Abra um prompt de comando em um dos desktops da rede 192.168.10.0/24.
-2. Execute o comando `ping` para o endereço IP do servidor web na rede B:
+- Abra um prompt de comando em um dos desktops da rede A e execute o comando ping para o endereço IP do servidor da rede B:
 
-```bash
-ping 192.168.30.1
-```
+![comunicacao](/files/ping_pc0.png)
 
-Se a comunicação for bem-sucedida, prossiga para o próximo passo.
 
-3. Teste o DNS para verificar se é possível resolver nomes de domínio na rede B. Execute o comando:
+### Acesso WEB
+---------------
 
-```bash
-nslookup redes
-```
+- Teste o acesso HTTP ao servidor web da rede B usando o IP:
+    - Abra um navegador da web em um dos PCs da rede A e insira o IP na barra de endereços.
 
-Esse comando tentará resolver o nome de domínio "redes" usando o servidor DNS configurado para a rede B (192.168.30.1). Se a resolução for feita com sucesso, você receberá uma resposta com o endereço IP correspondente ao nome de domínio.
+![web_ip](/files/pc3webada.png)
 
-4. Teste o acesso HTTP ao servidor web na rede B usando o nome de domínio. Abra um navegador da web em um dos desktops da rede A e insira o seguinte na barra de endereços:
+- Teste o acesso HTTP ao servidor web da rede B usando o nome de domínio:
+    - Abra um navegador da web em um dos PCs da rede A e insira o nome de domínio na barra de endereços.
 
-```
-http://redes
-```
-
-Isso tentará acessar o servidor web na rede B usando o nome de domínio configurado. Se a comunicação estiver funcionando corretamente e a resolução de DNS estiver configurada adequadamente, você verá a página web correspondente da Cisco.
-
-## Conclusão
-
-Com isso, concluímos a configuração das duas redes e a comunicação entre elas.
-
----
+![web_ip](/files/pc3webada1.png)

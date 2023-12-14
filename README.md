@@ -49,7 +49,7 @@ O objetivo final, é que um dos Desktops da Rede A, consiga colocar em seu naveg
 
 link da solucao https://github.com/Juan-Devops/Modulo_Redes/blob/main/Projeto_Redes_Equipe1.pkt
 
-Veja nossa solução [solucao](./abc/Projeto_Redes_Equipe1.pkt)!
+Veja nossa solução [solucao](./Projeto_Redes_Equipe1.pkt)
 
 ## Configuração das Redes
 

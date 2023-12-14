@@ -108,17 +108,20 @@ Rede B:
 
 ## Configuração do Roteamento
 
-- Ligue o roteador 
-Para que as redes possam se comunicar, é necessário configurar o roteamento entre elas. Para isso, podemos usar o protocolo de roteamento RIP.
+- Ligue o roteador
+- Incluia as redes A e B usando o protocolo de roteamento RIP.
 
-No roteador 1841, configure as seguintes rotas:
+![router](/files/router_ring.png)
 
-```bash
-ip route 192.168.30.0 255.255.255.0 192.168.10.1
-ip route 192.168.10.0 255.255.255.0 192.168.30.1
-```
+- Verifique as conexões das redes A e B com o roteador e  configure as rotas das redes para as interfaces Fa0/0 e Fa0/1:
 
-Essas rotas indicam que o roteador 1841 deve enviar pacotes destinados à rede 192.168.30.0/24 para a interface Fa0/1 e pacotes destinados à rede 192.168.10.0/24 para a interface Fa0/0.
+![router](/files/router.png)
+
+![router](/files/router1.png)
+
+
+
+  
 
 ## Teste de Comunicação e DNS
 

@@ -92,7 +92,7 @@ Rede B:
 ![PCs IP](/files/pc3(1).png)
 
 - Servidor web:
-    - Desligue o servidor e troque a placa de rede por uma PT-HOST-NM-1CGE, ligue o servidor novamente.
+    - Desligue o servidor e troque a placa de rede por uma PT-HOST-NM-1CGE (para melhorar o tráfego de navegação), ligue o servidor novamente.
 
 ![Servidor web](/files/server_web2ada.png)
 
@@ -113,14 +113,20 @@ Rede B:
 
 ![router](/files/router_ring.png)
 
-- Verifique as conexões das redes A e B com o roteador e  configure as rotas das redes para as interfaces Fa0/0 e Fa0/1:
+- Verifique as conexões das redes A e B com o roteador e  configure as rotas das redes para as interfaces FastEthernet0/0 e FastEthernet0/1:
 
 ![router](/files/router.png)
 
 ![router](/files/router1.png)
 
+## Configuração do DNS
+
+Finalmente, nos servidores DHCP das redes A e B incluia os dns do servidor web da rede B
+
+![DNSweb2](/files/server_DHCP2.png)
 
 
+![DNSweb2](/files/server_DHCP(1)2.png)
   
 
 ## Teste de Comunicação e DNS

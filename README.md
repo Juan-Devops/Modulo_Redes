@@ -7,7 +7,7 @@
 - Juan Soto Sotelo
 - Layse Roberta da Silva Araújo
 - leonardovsestudos@gmail.com
-- renataassis.17@gmail.com
+- Renata Martins de Assis
 
 ## Objetivo
 
